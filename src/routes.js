@@ -5,11 +5,12 @@ import Main from "./pages/Main";
 import Repository from "./pages/Repository";
 
 export default function RoutesApp() {
+
     return(
         <Router>
             <Routes>
                 <Route exact path="/" element={<Main />} />
-                <Route exact path="/repository" element={<Repository />} />
+                <Route exact path="/repository/:repository" element={<Repository />} />
             </Routes>
         </Router>
     )
